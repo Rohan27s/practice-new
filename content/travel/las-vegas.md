@@ -1,5 +1,5 @@
 ---
-location: Las Vegas
+title: Las Vegas
 travel-dates: August 12 2012
 featured-images: ../../static/images/12.png
 ---

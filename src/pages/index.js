@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => (
       {data.travelLocation.edges.map(({ node }) => (
         <Row key={node.id} className="mb-4">
           <Col>
-            <h3>{node.frontmatter.location}</h3>
+            <h3>{node.frontmatter.title}</h3>
             <Row>
               {node.frontmatter.featured_images.childrenImageSharp.map((imageNode, index) => {
                 const image = getImage(imageNode.gatsbyImageData)
@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => (
                   <Col xs={6} md={3} lg={8} key={index}>
                     <GatsbyImage
                       image={image}
-                      alt={node.frontmatter.location}
+                      alt={node.frontmatter.title}
                       className="img-fluid mb-3"
                     />
                   </Col>
@@ -54,7 +54,7 @@ query {
         id
         frontmatter {          
           travel_dates
-          location
+          title
           featured_images {
             childrenImageSharp {
               gatsbyImageData(aspectRatio: 1.5, width:600)

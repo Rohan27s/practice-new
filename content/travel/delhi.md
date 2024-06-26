@@ -1,5 +1,5 @@
 ---
-location: Delhi
+title: Delhi
 travel-dates: August 12 2012
 featured-images: ../../static/images/13.png
 ---
