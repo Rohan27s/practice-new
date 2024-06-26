@@ -1,0 +1,20 @@
+backend:
+  name: practice-new
+  branch: main
+
+media_folder: static/images
+public_folder: ../../static/images/
+
+collection:
+  - name: "travel"
+    preview: false
+    label: "Travel Packages"
+    folder: "content/travel"
+    create: true
+    slug: "{{slug}}"
+    fields:
+    - { label: "Location", name: "location", widget: "string" }
+    - { label: "Travel Dates", name: "travel-dates", widget: "string" }
+    - { label: "Featured Image", name: featured-images, widget: image }
+    - { label: "Body", name: "body", widget: "markdown" }
+
